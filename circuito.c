@@ -98,7 +98,7 @@ void setup() {
   // Inicialização do LCD
   lcd_1.begin(16, 2);
   lcd_1.setBacklight(0);
-  lcd_1.clear();
+  //lcd_1.clear();
   
    // Configurações do botão do LCD:
   pinMode(button_pin_LCD, INPUT_PULLUP);
@@ -223,7 +223,7 @@ void loop() {
       lcd_ligado=1;
     } else {
       lcd_1.setBacklight(0);      
-      lcd_1.clear();
+      //lcd_1.clear();
       lcd_ligado=0;
     }
   }
@@ -292,3 +292,5 @@ void loop() {
   lastButtonState_motor = buttonState_motor;
  
 }
+
+//Parabens pelo projeto!
